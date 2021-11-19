@@ -1,0 +1,239 @@
+/* Спецификация */
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #304041;
+    letter-spacing: 0.05em;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ul,
+li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.btn {
+    padding: 18px 0px;
+    background: #5F51FF;
+    border-radius: 119px;
+    font-size: 16px;
+    font-weight: 800;
+    color: #FFFFFF;
+    display: block;
+    width: 247px;
+    transition: all 0.5s ease;
+    margin: 0 auto;
+}
+
+.btn:hover {
+    background: #2b18fa;
+}
+
+.section {
+    margin-bottom: 146px;
+}
+
+.section-title {
+    font-size: 30px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+
+/* Первая секция */
+
+.header {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 1.39%, rgba(36, 32, 84, 0.23) 44.44%), url('../img/bg7.jpg') no-repeat center top / cover;
+    text-align: center;
+    padding: 90px 0 80px;
+    margin-bottom: 143px;
+}
+
+.logo {
+    display: block;
+    margin-bottom: 235px;
+}
+
+.offer {}
+
+.offer__info {
+    display: block;
+    width: 245px;
+    background: #FFFFFF;
+    border-radius: 78px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #000000;
+    padding: 8px 17px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+}
+
+.offer__title {
+    font-size: 60px;
+    letter-spacing: 0.145em;
+    line-height: 1.35em;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+
+.offer__text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+
+.arrow-down {
+    background: url('../img/arrow-down.svg');
+    width: 18px;
+    height: 26px;
+    display: block;
+    margin: 191px auto 0;
+    opacity: 0.5;
+    transition: all 0.5s ease;
+}
+
+.arrow-down:hover {
+    opacity: 1;
+}
+
+
+/* Cекция Маршруты*/
+
+.routes {
+    margin-bottom: 146px;
+}
+
+.arrow-next {
+    background: url('../img/arrow-next.svg');
+    width: 68px;
+    height: 17px;
+    display: block;
+    margin-top: 47px;
+    opacity: 0.5;
+    transition: all 0.5s ease;
+    margin-bottom: 112px;
+}
+
+.arrow-next:hover {
+    opacity: 1;
+}
+
+.routes__wrapper {
+    background: #EAF4F7;
+    display: flex;
+    max-height: 649px;
+    font-family: Montserrat;
+    font-style: normal;
+    margin-bottom: 87px;
+}
+
+.routes__image {
+    display: block;
+    width: 476px;
+    margin-left: auto;
+    object-fit: cover;
+}
+
+.routes__content {
+    width: 521px;
+    padding-top: 112px;
+    padding-left: 73px;
+    /* padding-bottom: 112px; */
+}
+
+.routes__id {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #789AA0;
+    margin-bottom: 20px;
+}
+
+.routes__title {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #304041;
+    margin-bottom: 40px;
+}
+
+.routes__text-item {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 23px;
+    letter-spacing: 0.05em;
+    color: #304041;
+    margin-bottom: 30px;
+}
+
+.routes__btn {
+    background: #fff;
+    border-radius: 119px;
+    display: block;
+    width: 332px;
+    transition: all 0.5s ease;
+    margin: 0 auto;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #23CF7D;
+    border: 1px solid #23CF7D;
+}
+
+.routes__btn:hover {
+    color: #01924c;
+    border: 1px solid #01924c;
+    background: #fff;
+}
