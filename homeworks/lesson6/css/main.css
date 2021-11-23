@@ -46,6 +46,12 @@ a {
     margin: 0 auto;
 }
 
+.container_full-height {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
 .btn {
     padding: 18px 0px;
     background: #5F51FF;
@@ -236,4 +242,51 @@ a {
     color: #01924c;
     border: 1px solid #01924c;
     background: #fff;
+}
+
+
+/* История */
+
+.story-content {
+    background: url('../img/bg6.jpg') no-repeat right top / 50%;
+    height: 626px;
+    margin-bottom: 146px;
+}
+
+.story-content__list {}
+
+.story-content__item {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    width: 407px;
+    margin-bottom: 61px;
+}
+
+.story-content__item:before {
+    content: '';
+    display: block;
+    width: 7px;
+    height: 64px;
+    background: #4EB1B6;
+    border-radius: 23px;
+    transform: rotate(90deg);
+    margin-left: 27px;
+}
+
+
+/* Подвал */
+
+.footer-content {
+    display: flex;
+}
+
+.footer {
+    margin-bottom: 146px;
+}
+
+.footer__text_copyright {
+    margin-right: 60px;
 }
