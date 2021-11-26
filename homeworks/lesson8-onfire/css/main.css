@@ -233,7 +233,7 @@ a {
 }
 
 
-/* ---- Стандарты ---- */
+/* ---- Стандарты ----
 
 .standarts {
     background: #F6F6F8;
@@ -264,7 +264,7 @@ a {
 
 .standarts-wrapper__img img {
     border-radius: 30px
-}
+} */
 
 .achievements {
     border-top: 1px solid #E0E0E0;
