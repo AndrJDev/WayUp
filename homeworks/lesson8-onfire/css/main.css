@@ -38,6 +38,15 @@ p {
     line-height: 1.35em;
 }
 
+input:focus, button:focus { 
+    outline: none
+}  
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
 .container {
     width: 1110px;
     margin: 0 auto;
@@ -61,18 +70,19 @@ a {
     font-size: 16px;
     font-weight: 500;
     display: block;
-    width: 200px;
-    transition: all 0.5s ease;
+    width: 200px;    
     text-align: center;
+    transition: background 0.5s ease;
 }
 
 .btn:hover {
-    background: #2C71FF
+    background: #033fb8;
+    transition: background 0.5s ease;
 }
 
 .section-title {
     font-size: 36px;
-    padding-top: 100px;
+    /* padding-top: 100px; */
 }
 
 .paragraph {
@@ -86,7 +96,7 @@ a {
     background: linear-gradient(57.79deg, rgba(51, 5, 111, 0.58) 27.19%, rgba(56, 32, 87, 0.29) 81.02%), url('../img/header_bg2.jpg') no-repeat center top / cover;
     text-align: left;
     color: #fff;
-    padding-bottom: 70px;
+    /* padding-bottom: 70px; */
 }
 
 .nav {
@@ -107,6 +117,10 @@ a {
 .phone-number {
     color: #fff;
     margin-left: auto;
+}
+
+.phone-number:hover {
+    text-decoration: underline
 }
 
 .menu__list {
@@ -133,6 +147,7 @@ a {
 
 .offer-wrapper {
     padding-top: 137px;
+    padding-bottom: 70px;
 }
 
 .offer__intro {
@@ -148,7 +163,7 @@ a {
 
 .offer__btn { 
     margin-right: auto;
-    margin-bottom: 168px;
+    margin-bottom: 168px;    
 }
 
 .arrow-down {
@@ -169,10 +184,10 @@ a {
 
 .branches {
     padding-bottom: 105px;
+    padding-top: 105px;
 }
 
-.section-title_branches {
-    padding-top: 105px;
+.section-title_branches {    
     width: 780px;
     margin-bottom: 25px;
 }
@@ -272,6 +287,7 @@ a {
 /* ---- Портфолио ---- */
 
 .portfolio {
+    padding-top: 109px;
     padding-bottom: 130px;
     background: #F7F6F8;
     position: relative;
@@ -293,6 +309,8 @@ a {
     margin-left: -386px;
     margin-top: -114px;
     text-align: center;
+    position: relative;
+    z-index: 10;
 }
 
 .all-projects-text {
@@ -354,14 +372,13 @@ a {
 .video {
     background: url('../img/video-bg.jpg') no-repeat center top / cover;
     color: #fff; 
-    padding-top: 200px;
+    padding-top: 103px;
     padding-bottom: 103px;
 }
 
 .section-title_video {
     color: #323232;
-    text-align: center;
-    padding-top: 80px;
+    text-align: center;    
     margin-bottom: 26px;
 }
 
@@ -433,13 +450,11 @@ a {
     height: 45px;
     border-radius: 50%;
     background: #FF4975;
-    margin-left: -16px;
+    margin-left: -25px;
 }
 
-.subscribe__img {
-    padding: 11px;
+.subscribe__img {    
 }
-
 
 /* ---- Футер ---- */
 
@@ -469,20 +484,39 @@ a {
     padding-top: 42px;
 }
 
-.footer-content__list-item_line {
-    margin-right: 20px;
-}
-
 .footer-content__list-item {
     margin-bottom: 21px;
     font-size: 14px;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
+
+.footer-content__list-item:hover {
+    text-decoration: underline;
+}
+
 
 .footer-content__list-item a {
     color: #999999;
     display: flex
+}
+
+.footer-content__list-item a:hover {
+    text-decoration: underline;
+}
+
+.footer-content__list-item_line {
+    margin-right: 20px;
+    color: #FF4975;
+}
+
+.footer-content__list-item_line a{    
+    color: #FF4975;
+}
+
+.footer-content__list-item_line:hover {
+    text-decoration: underline;
 }
 
 .footer-content__icon {
@@ -496,3 +530,35 @@ a {
 .footer-credits__text {
     font-size: 13px;    
 }
+
+.card {
+    position: relative;    
+    transition: background .5s ease-in;
+    cursor: pointer;
+ }
+  
+ .card__image {
+    display: block;    
+    width: 345px;
+    height: 265px;
+    border-radius: 10px;
+ }
+
+ .card__overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;   
+    visibility: none;
+    transition: background .5s ease;    
+    background: rgba(0, 0, 0, 0.25) url("../img/search.svg") no-repeat center center;    
+    border-radius: 10px;    
+ }    
+
+  .card:hover .card__overlay {
+    opacity: 1;    
+  }

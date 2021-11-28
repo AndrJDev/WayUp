@@ -57,7 +57,7 @@
                         </li>
                     </ul>
                 </nav>
-                <a href="#" class="phone-number">+1 (399) 344-54-23</a>
+                <a href="tel:+13993445423" class="phone-number">+1 (399) 344-54-23</a>                
             </div>
         </div>
         <div class="offer-wrapper">
@@ -155,10 +155,11 @@
                         <img src="img/project-1.jpg" alt="Работа">
                     </a>
                 </div>
-                <div class="works__item">
-                    <a href="#" class="works__link">
-                        <img src="img/project-2.jpg" alt="Работа">
-                    </a>
+                <div class="works__item">                    
+                    <div class="card">
+                        <img src="img/project-2.jpg" class="card__image" alt="project-2">
+                        <div class="card__overlay"></div>
+                    </div>
                 </div>
                 <div class="works__item">
                     <a href="#" class="works__link">
@@ -265,19 +266,19 @@
                     <ul class="footer-content__list">
                         <div class="footer-content__list-wrapper">
                         <li class="footer-content__list-item footer-content__list-item_line">
-                            <a href="#">
-								ВКонтакте
-							</a>
+                            <!--noindex--> 
+                            <a href="#" rel="nofollow noopener noreferrer" target="blank">ВКонтакте</a>
+                            <!--/noindex-->                            
                         </li>
                         <li class="footer-content__list-item footer-content__list-item_line">
-                            <a href="#">
-								Instagram
-							</a>
+                            <!--noindex--> 
+                            <a href="#" rel="nofollow noopener noreferrer" target="blank">Instagram</a>
+                            <!--/noindex-->
                         </li>
                         <li class="footer-content__list-item footer-content__list-item_line">
-                            <a href="#">
-								Facebook
-							</a>
+                            <!--noindex--> 
+                            <a href="#" rel="nofollow noopener noreferrer" target="blank">Facebook</a>
+                            <!--/noindex-->                            
                         </li>
                     </div>
                     </ul>
@@ -288,12 +289,12 @@
                             У нас есть рассылка - включайтесь!
                         </h3>
                         <form action="#" class="subscribe__form">
-                            <input type="email" class="subscribe__input" placeholder="Ваш e-mail" required>                           
-                            <a href="№" class="subscribe__circle">
+                            <input type="email" class="subscribe__input" placeholder="Ваш e-mail" required name="email">                           
+                            <button href="№" class="subscribe__circle">
                                 <div class="subscribe__img">
                                     <img src=" img/send.svg " alt="Подписаться ">
                                 </div>
-                            </a>
+                            </button>
                         </form>
                         <p class="subscribe__policy ">
                             Ваши данные под надежной защитой
