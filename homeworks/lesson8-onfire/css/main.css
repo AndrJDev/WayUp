@@ -203,6 +203,10 @@ a {
     border-radius: 0px 10px 10px 10px; 
 }
 
+.services__img:hover {
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5)
+}
+
 .services__item {
     width: 508px;
     height: 144px;
@@ -326,6 +330,7 @@ a {
     transition: all 0.5s ease;
     display: block;
     border-radius: 10px;
+    transition: all 0.5s ease;
 }
 
 .works__link img {
@@ -336,7 +341,7 @@ a {
 }
 
 .works__link:hover {
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2)
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);    
 }
 
 .portfolio_btn {
